@@ -1,4 +1,3 @@
-
 // 一、TypeScript 编译
     // JavaScript 的运行环境（浏览器和 Node.js）不认识 TypeScript 代码。所以，TypeScript 项目要想运行，必须先转为 JavaScript 代码，这个代码转换的过程就叫做“编译”（compile）。
 
@@ -25,3 +24,10 @@
 
 // 四、tsconfig.json
     // TypeScript 允许将tsc的编译参数，写在配置文件tsconfig.json。只要当前目录有这个文件，tsc就会自动读取，所以运行时可以不写参数。
+    // tsc file1.ts file2.ts --outFile dist/app.js该命令写成tsconfig.json文件如下：
+    // {
+    //     "compilerOptions": {
+    //         "target": "es2015",
+    //         "outFile": "dist/app.js"
+    //     }
+    // }
